@@ -1,5 +1,5 @@
 # /app /usr /lib
-FROM node:19.9-alpine3.16
+FROM --platform=linux/amd64 node:19.9-alpine3.16 AS node_amd64
 
 # cd app
 WORKDIR /app
